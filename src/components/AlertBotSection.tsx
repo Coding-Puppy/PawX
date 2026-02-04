@@ -18,7 +18,7 @@ const AlertBotSection = () => {
           <div className="relative">
             {/* Phone mockup container */}
             <div className="relative mx-auto w-[280px] h-[560px] bg-gradient-to-br from-primary/20 to-primary/5 rounded-[3rem] p-3 shadow-2xl">
-              <div className="w-full h-full bg-background rounded-[2.5rem] overflow-hidden border border-border/50">
+              <div className="w-full h-full bg-background rounded-[2.5rem] overflow-hidden border border-orange-200/30 dark:border-orange-800/20">
                 {/* Phone screen content */}
                 <div className="p-6 space-y-4">
                   {/* Header */}

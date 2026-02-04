@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Nunito', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -68,6 +69,13 @@ export default {
           dark: "hsl(var(--paw-dark))",
           brown: "hsl(var(--paw-brown))",
         },
+        // 赛博朋克霓虹色
+        cyber: {
+          cyan: "hsl(var(--cyber-cyan))",
+          purple: "hsl(var(--cyber-purple))",
+          pink: "hsl(var(--cyber-pink))",
+          yellow: "hsl(var(--cyber-yellow))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,11 +88,17 @@ export default {
         soft: "var(--shadow-soft)",
         card: "var(--shadow-card)",
         button: "var(--shadow-button)",
+        brutal: "var(--shadow-brutal)",
+        "brutal-sm": "var(--shadow-brutal-sm)",
+        "brutal-lg": "var(--shadow-brutal-lg)",
+        "glow-orange": "var(--shadow-glow-orange)",
+        "glow-cyan": "var(--shadow-glow-cyan)",
       },
       backgroundImage: {
         "gradient-hero": "var(--gradient-hero)",
         "gradient-card": "var(--gradient-card)",
         "gradient-orange": "var(--gradient-orange)",
+        "gradient-cyber": "var(--gradient-cyber)",
       },
       keyframes: {
         "accordion-down": {

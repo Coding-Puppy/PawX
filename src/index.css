@@ -1,6 +1,7 @@
-/* PawX AI Design System - 科技感 + 卡通风格 */
+/* PawX AI Design System - 赛博朋克 + 卡通风格融合 */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,19 +9,25 @@
 
 @layer base {
   :root {
-    /* 品牌色 - 活力橙 */
+    /* 品牌色 - 活力橙（保持原有） */
     --primary: 24 95% 53%;
     --primary-foreground: 0 0% 100%;
-    
+
     /* 深橙强调 */
     --accent: 21 90% 48%;
     --accent-foreground: 0 0% 100%;
-    
-    /* 温暖米色背景 */
-    --background: 33 100% 96%;
+
+    /* 赛博朋克霓虹色 */
+    --cyber-cyan: 189 100% 42%;
+    --cyber-purple: 280 100% 54%;
+    --cyber-pink: 330 100% 50%;
+    --cyber-yellow: 48 96% 53%;
+
+    /* 温暖米色背景（稍微加深） */
+    --background: 33 100% 94%;
     --foreground: 20 14% 4%;
 
-    /* 卡片 - 白色带橙色边框 */
+    /* 卡片 - 白色带边框 */
     --card: 0 0% 100%;
     --card-foreground: 20 14% 4%;
 
@@ -43,7 +50,7 @@
     --input: 33 40% 85%;
     --ring: 24 95% 53%;
 
-    --radius: 1rem;
+    --radius: 0.75rem;
 
     /* 自定义品牌变量 */
     --paw-orange: 24 95% 53%;
@@ -51,16 +58,22 @@
     --paw-cream: 33 100% 96%;
     --paw-dark: 20 14% 4%;
     --paw-brown: 28 80% 20%;
-    
+
     /* 渐变 */
-    --gradient-hero: linear-gradient(135deg, hsl(33 100% 96%) 0%, hsl(33 80% 92%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(33 100% 94%) 0%, hsl(33 80% 90%) 100%);
     --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(33 60% 97%) 100%);
     --gradient-orange: linear-gradient(135deg, hsl(24 95% 53%) 0%, hsl(21 90% 48%) 100%);
-    
-    /* 阴影 */
+    --gradient-cyber: linear-gradient(135deg, hsl(24 95% 53%) 0%, hsl(189 100% 42%) 100%);
+
+    /* 赛博朋克硬阴影 */
+    --shadow-brutal: 4px 4px 0px hsl(20 14% 4%);
+    --shadow-brutal-sm: 2px 2px 0px hsl(20 14% 4%);
+    --shadow-brutal-lg: 6px 6px 0px hsl(20 14% 4%);
     --shadow-soft: 0 4px 20px -4px hsl(24 95% 53% / 0.15);
     --shadow-card: 0 8px 30px -8px hsl(24 95% 53% / 0.2);
     --shadow-button: 0 6px 20px -4px hsl(24 95% 53% / 0.4);
+    --shadow-glow-orange: 0 0 20px hsl(24 95% 53% / 0.4);
+    --shadow-glow-cyan: 0 0 20px hsl(189 100% 42% / 0.4);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -131,22 +144,51 @@
     line-height: 0.95;
   }
   
-  /* 代码块样式 */
+  /* 代码块样式 - 赛博朋克风格 */
   .code-block {
-    @apply bg-card/80 backdrop-blur-sm rounded-xl border border-border/50 p-4 font-mono text-sm;
-    box-shadow: var(--shadow-soft);
+    @apply bg-card/80 backdrop-blur-sm rounded-lg border-2 border-foreground/80 p-4 text-sm;
+    font-family: 'JetBrains Mono', monospace;
+    box-shadow: var(--shadow-brutal-sm);
   }
-  
-  /* 玻璃态卡片 */
+
+  /* 玻璃态卡片 - 带硬边框 */
   .glass-card {
-    @apply bg-card/70 backdrop-blur-md rounded-2xl border border-border/30;
-    box-shadow: var(--shadow-card);
+    @apply bg-card/70 backdrop-blur-md rounded-xl border-2 border-foreground/10;
+    box-shadow: var(--shadow-brutal-sm);
+    transition: all 0.3s ease;
   }
-  
+
+  .glass-card:hover {
+    box-shadow: var(--shadow-brutal-sm), var(--shadow-glow-orange);
+    border-color: hsl(var(--primary) / 0.3);
+  }
+
+  /* 赛博朋克卡片 */
+  .cyber-card {
+    @apply bg-card rounded-lg border-2 border-foreground p-6;
+    box-shadow: var(--shadow-brutal);
+    transition: all 0.2s ease;
+  }
+
+  .cyber-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px hsl(20 14% 4%);
+  }
+
+  .cyber-card:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px hsl(20 14% 4%);
+  }
+
   /* 渐变文字 */
   .gradient-text {
     @apply bg-clip-text text-transparent;
     background-image: var(--gradient-orange);
+  }
+
+  .gradient-text-cyber {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-cyber);
   }
   
   /* 浮动动画 */

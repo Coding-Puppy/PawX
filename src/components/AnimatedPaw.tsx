@@ -78,7 +78,7 @@ const AnimatedPaw = ({ label, className = "", flip = false, rotate = 0 }: Animat
               alt="paw"
               className="absolute inset-0 w-full h-full object-contain"
               style={{
-                filter: "brightness(1.2) saturate(1.5) hue-rotate(-10deg)",
+                filter: "brightness(1.1) saturate(0.8) hue-rotate(-10deg)",
               }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -91,13 +91,13 @@ const AnimatedPaw = ({ label, className = "", flip = false, rotate = 0 }: Animat
         <div
           className={`mt-2 text-center text-base md:text-xl font-bold transition-all duration-300 ${
             isActive || isHovered
-              ? "text-[#FF751F]"
+              ? "text-[#E8A87C]"
               : "text-white/70"
           }`}
           style={{
             textShadow:
               isActive || isHovered
-                ? "0 0 8px #FF751F, 0 0 16px #FF751F"
+                ? "0 0 6px rgba(232, 168, 124, 0.5), 0 0 12px rgba(232, 168, 124, 0.3)"
                 : "none",
           }}
         >
