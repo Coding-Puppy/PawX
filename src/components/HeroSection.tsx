@@ -12,20 +12,32 @@ const HeroSection = () => {
 
       {/* 动态猫爪装饰 */}
       <AnimatedPaw
-        label="Real-Time"
-        className="top-[20vh] right-[10%] hidden lg:block pointer-events-auto"
-        rotate={-20}
-      />
-      <AnimatedPaw
-        label="Fast API"
-        className="top-[50vh] left-[8%] hidden lg:block pointer-events-auto"
+        label="Profile & historical tweets"
+        className="top-[14vh] left-[8%] hidden lg:block pointer-events-auto"
         flip
-        rotate={25}
+        rotate={-12}
       />
       <AnimatedPaw
-        label="Smart Bot"
-        className="bottom-[25vh] right-[12%] hidden lg:block pointer-events-auto"
-        rotate={15}
+        label="Realtime websocket"
+        className="top-[40vh] left-[10%] hidden lg:block pointer-events-auto"
+        flip
+        rotate={18}
+      />
+      <AnimatedPaw
+        label="Sniping bot"
+        className="top-[66vh] left-[9%] hidden lg:block pointer-events-auto"
+        flip
+        rotate={8}
+      />
+      <AnimatedPaw
+        label="Smart Followers"
+        className="top-[26vh] right-[10%] hidden lg:block pointer-events-auto"
+        rotate={-18}
+      />
+      <AnimatedPaw
+        label="Keyword monitor"
+        className="top-[58vh] right-[12%] hidden lg:block pointer-events-auto"
+        rotate={12}
       />
 
       <div className="relative max-w-5xl mx-auto text-center">
