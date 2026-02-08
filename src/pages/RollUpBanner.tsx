@@ -20,6 +20,17 @@ const RollUpBanner = () => {
 
         {/* 内容区域 */}
         <div className="relative h-full flex flex-col py-8 px-10">
+          <div className="absolute top-6 right-6 flex items-center gap-4 rounded-2xl bg-background/80 px-5 py-4 shadow-lg backdrop-blur">
+            <div className="text-right">
+              <div className="text-3xl font-extrabold text-foreground">Follow X</div>
+              <div className="text-2xl font-bold text-foreground">@pawx_ai</div>
+            </div>
+            <img
+              src="/x.png"
+              alt="X Logo"
+              className="h-24 w-24 object-contain"
+            />
+          </div>
 
           {/* 顶部 Logo + 主标题区域 */}
           <div className="text-center mb-10">
