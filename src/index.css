@@ -153,14 +153,14 @@
 
   /* 玻璃态卡片 - 带硬边框 */
   .glass-card {
-    @apply bg-card/70 backdrop-blur-md rounded-xl border-2 border-foreground/10;
-    box-shadow: var(--shadow-brutal-sm);
+    @apply bg-card/70 backdrop-blur-md rounded-xl border-2;
+    border-color: hsl(var(--primary) / 0.3);
     transition: all 0.3s ease;
   }
 
   .glass-card:hover {
-    box-shadow: var(--shadow-brutal-sm), var(--shadow-glow-orange);
-    border-color: hsl(var(--primary) / 0.3);
+    box-shadow: var(--shadow-glow-orange);
+    border-color: hsl(var(--primary) / 0.5);
   }
 
   /* 赛博朋克卡片 */

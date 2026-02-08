@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PawX Banner - PDF Export</title>
+    <style>
+        @page {
+            size: 800px 2000px;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 800px;
+            height: 2000px;
+            background: white;
+        }
+
+        iframe {
+            width: 800px;
+            height: 2000px;
+            border: none;
+            display: block;
+        }
+
+        @media print {
+            body {
+                width: 800px;
+                height: 2000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <iframe src="/banner"></iframe>
+</body>
+</html>
