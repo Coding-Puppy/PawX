@@ -30,8 +30,8 @@ const RollUpBanner = () => {
               />
             </div>
             <h2 className="hero-title text-6xl text-foreground mt-4 leading-tight">
-              <span className="gradient-text">Paw through</span> social data<br />
-              <span className="gradient-text">to</span> crypto insights
+              <span className="gradient-text">PawX </span> through social data<br />
+              to <span className="gradient-text"></span> crypto insights
             </h2>
           </div>
 
@@ -41,26 +41,28 @@ const RollUpBanner = () => {
               <span className="gradient-text">INTRODUCTION</span>
             </h2>
             <p className="text-2xl text-foreground font-semibold leading-relaxed">
-              We provide Web3 Twitter data APIs, real-time Telegram alert bots, profile intelligence, and customized AI solutions—powering news trading bots, InfoFi agents, KOL analytics, and automated workflows.
+              Turn <span className="gradient-text-cyber">web3</span> social data, real-time alerts, and AI
+            </p>
+            <p className="text-2xl text-foreground font-semibold leading-relaxed">
+              into actionable applications.
             </p>
           </div>
 
           {/* 核心特性标签 */}
           <div className="flex flex-wrap justify-center gap-3 mb-10">
             <span className="px-5 py-2 bg-primary/10 rounded-full text-lg font-bold text-primary">
-              🐾 Real-Time
+              🐾 Comprehensive
             </span>
             <span className="px-5 py-2 bg-primary/10 rounded-full text-lg font-bold text-primary">
               ⚡ Fast
             </span>
             <span className="px-5 py-2 bg-primary/10 rounded-full text-lg font-bold text-primary">
+              🎯 Accurate
+            </span>
+            <span className="px-5 py-2 bg-primary/10 rounded-full text-lg font-bold text-primary">
               🤖 Smart
             </span>
           </div>
-
-          <p className="text-xl text-muted-foreground font-semibold text-center mb-3">
-            Stop missing alpha. Start tracking signals.
-          </p>
 
           <div className="flex justify-center items-center gap-8 mb-8" style={{ background: 'linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 140, 66, 0.15) 100%)', padding: '18px', borderRadius: '16px', border: '2px solid rgba(255, 107, 53, 0.3)' }}>
             <div className="flex items-center gap-4 rounded-2xl bg-background/80 px-5 py-3 shadow-lg">
@@ -87,7 +89,7 @@ const RollUpBanner = () => {
                 className="h-20 w-20 object-contain"
               />
               <div className="text-left">
-                <div className="text-xl font-extrabold text-foreground">Follow TG</div>
+                <div className="text-xl font-extrabold text-foreground">Join TG</div>
                 <div className="text-lg font-bold text-foreground">@pawx_ai</div>
               </div>
               <img
@@ -121,10 +123,9 @@ const RollUpBanner = () => {
                 </div>
                 <div className="text-lg text-muted-foreground text-left leading-relaxed">
                   <ul className="list-disc list-inside space-y-2">
-                    <li>Tweet engagement tracking</li>
-                    <li>10K KOL Label Data</li>
-                    <li>Returns tweets referencing a tweet</li>
-                    <li>Returns keyword-related tweets</li>
+                    <li>Track 500,000+ crypto profiles and their latest tweets</li>
+                    <li>KOL profiling: history, engagement metrics, and expertise tags</li>
+                    <li>Trending intel: top tweets and top accounts in real time</li>
                   </ul>
                 </div>
               </div>
@@ -140,10 +141,9 @@ const RollUpBanner = () => {
                 </div>
                 <div className="text-lg text-muted-foreground text-left leading-relaxed">
                   <ul className="list-disc list-inside space-y-2">
-                    <li>Instant alerts (~300ms)</li>
-                    <li>Quick trend summaries</li>
-                    <li>KOL identification</li>
-                    <li>Sentiment monitoring</li>
+                    <li>Real-time tweet alerts for monitored accounts (~300ms)</li>
+                    <li>Smart filters: CA mentions, keywords, and account interactions</li>
+                    <li>Token sniping from tweet signals (configurable rules)</li>
                   </ul>
                 </div>
               </div>
@@ -159,10 +159,9 @@ const RollUpBanner = () => {
                 </div>
                 <div className="text-lg text-muted-foreground text-left leading-relaxed">
                   <ul className="list-disc list-inside space-y-2">
-                    <li>InfoFi project tracking</li>
-                    <li>Auto summary bot</li>
-                    <li>KOL performance labels</li>
-                    <li>Automated email agent</li>
+                    <li>InfoFi Project Tracking: analyzing discussions, sentiments, and trends</li>
+                    <li>AI Content Generation: generating viral content from signals and trends</li>
+                    <li>Automated AI Agents for trading, summarization, and broadcasting</li>
                   </ul>
                 </div>
               </div>
@@ -178,10 +177,9 @@ const RollUpBanner = () => {
                 </div>
                 <div className="text-lg text-muted-foreground text-left leading-relaxed">
                   <ul className="list-disc list-inside space-y-2">
-                    <li>Identify key opinion leaders</li>
-                    <li>Monitor competitive intelligence</li>
-                    <li>Measure campaign effectiveness</li>
-                    <li>Detect sentiment shifts early</li>
+                    <li>KOL discovery by keyword: rank users by engagement contribution</li>
+                    <li>Influencer attribution: posts, engagement breakdown, and scores</li>
+                    <li>Campaign reporting: keyword reach and engagement trends over time</li>
                   </ul>
                 </div>
               </div>
@@ -194,7 +192,7 @@ const RollUpBanner = () => {
               <span className="gradient-text">Trusted by 10+ Web3 Projects</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
-              PawX AI is already trusted by more than 10+ Web3 projects, including UXLINK, TrueNorth, and Padthai, demonstrating real-world traction
+              PawX AI is already trusted by more than 10+ Web3 projects, including UXLINK, TrueNorth, and Padt.ai, demonstrating real-world traction
             </p>
             <div className="flex justify-center gap-4 items-center flex-wrap">
               <span className="px-6 py-3 bg-primary/10 rounded-full text-xl font-bold text-primary">
@@ -204,11 +202,11 @@ const RollUpBanner = () => {
                 TrueNorth
               </span>
               <span className="px-6 py-3 bg-primary/10 rounded-full text-xl font-bold text-primary">
-                Padthai
+                Padt.ai
               </span>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>

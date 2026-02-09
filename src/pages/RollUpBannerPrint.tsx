@@ -133,7 +133,7 @@ const RollUpBannerPrint = () => {
               <span className="gradient-text">Trusted by 10+ Web3 Projects</span>
             </h3>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              PawX AI is already trusted by more than 10+ Web3 projects, including UXLINK, TrueNorth, and padthai, demonstrating real-world traction
+              PawX AI is already trusted by more than 10+ Web3 projects, including UXLINK, TrueNorth, and Padt.ai, demonstrating real-world traction
             </p>
             <div className="flex justify-center gap-4 items-center flex-wrap">
               <span className="px-6 py-3 bg-primary/10 rounded-full text-xl font-bold text-primary">
@@ -143,7 +143,7 @@ const RollUpBannerPrint = () => {
                 TrueNorth
               </span>
               <span className="px-6 py-3 bg-primary/10 rounded-full text-xl font-bold text-primary">
-                padthai
+                Padt.ai
               </span>
             </div>
           </div>
