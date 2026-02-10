@@ -44,7 +44,7 @@ const AnimatedPaw = ({ label, className = "", flip = false, rotate = 0 }: Animat
       >
         {/* Paw Image Container */}
         <div
-          className={`relative w-32 h-32 md:w-40 md:h-40 ${flip ? "scale-x-[-1]" : ""}`}
+          className={`relative w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 xl:w-40 xl:h-40 ${flip ? "scale-x-[-1]" : ""}`}
           style={{ transform: `rotate(${rotate}deg) ${flip ? "scaleX(-1)" : ""}` }}
         >
           {/* Base grey paw (always visible) */}
@@ -89,7 +89,7 @@ const AnimatedPaw = ({ label, className = "", flip = false, rotate = 0 }: Animat
 
         {/* Label */}
         <div
-          className={`mt-2 text-center text-base md:text-xl font-bold transition-all duration-300 ${
+          className={`mt-1.5 sm:mt-2 text-center text-xs sm:text-sm lg:text-base xl:text-xl font-bold transition-all duration-300 leading-tight max-w-[120px] sm:max-w-none ${
             isActive || isHovered
               ? "text-primary"
               : "text-foreground"

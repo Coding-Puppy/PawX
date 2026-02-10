@@ -188,9 +188,9 @@ const ApiSection = () => {
   };
 
   return (
-    <section id="api" className="py-24 px-6 bg-secondary/30">
+    <section id="api" className="py-16 sm:py-24 px-6 bg-secondary/30">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-[1.2fr,0.8fr] gap-12 items-start">
+        <div className="grid lg:grid-cols-[1.2fr,0.8fr] gap-8 sm:gap-12 items-start">
           {/* Left - Text */}
           <div>
             <span className="px-4 py-2 bg-primary/10 rounded-full text-sm font-bold text-primary mb-4 inline-block">
@@ -206,13 +206,13 @@ const ApiSection = () => {
             </p>
 
             {/* WebSocket Events */}
-            <div className="flex flex-wrap gap-4 mb-8">
+            <div className="flex flex-wrap gap-3 sm:gap-4 mb-8">
               {apiExamples.map((item, index) => (
                 <button
                   key={item.label}
                   type="button"
                   onClick={() => setActiveIndex(index)}
-                  className={`px-5 py-3 rounded-xl text-base font-semibold flex items-center gap-3 shadow-soft transition-all ${
+                  className={`w-full sm:w-auto px-4 py-2 sm:px-5 sm:py-3 rounded-xl text-sm sm:text-base font-semibold flex items-center gap-3 shadow-soft transition-all ${
                     activeIndex === index
                       ? "bg-primary/10 text-foreground"
                       : "bg-card text-foreground hover:bg-primary/5"
@@ -232,7 +232,7 @@ const ApiSection = () => {
           </div>
 
           {/* Right - Code Block */}
-          <div className="relative mt-[180px]">
+          <div className="relative mt-8 sm:mt-12 lg:mt-[180px]">
             <div className="glass-card overflow-hidden">
               {/* Header */}
               <div className="flex items-center justify-between px-4 py-3 border-b border-border/50 bg-muted/30">
@@ -260,8 +260,8 @@ const ApiSection = () => {
               </div>
               
               {/* Code */}
-              <pre className="p-5 overflow-x-auto h-[280px] flex items-start pt-8">
-                <code className="text-sm font-mono">{activeExample.code}</code>
+              <pre className="p-4 sm:p-5 overflow-x-auto h-[220px] sm:h-[260px] lg:h-[280px] flex items-start pt-6 sm:pt-8 whitespace-pre-wrap break-words">
+                <code className="text-xs sm:text-sm font-mono">{activeExample.code}</code>
               </pre>
             </div>
 
