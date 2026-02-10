@@ -89,8 +89,10 @@ const AlertBotSection = () => {
               ))}
             </div>
 
-            <Button variant="hero" size="lg">
-              Start Using Bot
+            <Button variant="hero" size="lg" asChild>
+              <a href="https://t.me/pawx_dev_bot" target="_blank" rel="noreferrer">
+                Start Using Bot
+              </a>
             </Button>
           </div>
         </div>

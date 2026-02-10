@@ -16,7 +16,7 @@ const Footer = () => {
             <div>
               <span className="text-lg font-bold text-foreground">PawX AI</span>
               <p className="text-sm text-muted-foreground">
-                © 2024 PawX AI. All rights reserved.
+                © 2026 PawX AI. All rights reserved.
               </p>
             </div>
           </div>
@@ -46,19 +46,25 @@ const Footer = () => {
           {/* Social */}
           <div className="flex items-center gap-4">
             <a
-              href="#"
+              href="https://x.com/pawx_ai"
+              target="_blank"
+              rel="noreferrer"
               className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
             >
               <Twitter className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://t.me/pawx_ai"
+              target="_blank"
+              rel="noreferrer"
               className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
             >
               <MessageCircle className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://github.com/abcd5251/pawx_api"
+              target="_blank"
+              rel="noreferrer"
               className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
             >
               <Github className="w-5 h-5" />
